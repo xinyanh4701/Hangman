@@ -11,7 +11,36 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     </head>
     <body>
-        
+        <div class="container">
+        <h1 id="larger">Hangman</h1>
+        <svg id = "hangman" height="500" width="300" xmlns="http://www.w3.org/2000/svg">
+            <!-- bottom line -->
+            <line x1="0" y1="500" x2="300" y2="500" style="stroke:black;stroke-width:2"/> 
+            <!-- pole -->
+            <line x1="150" y1="500" x2="150" y2="200" style="stroke:black;stroke-width:2"/>
+            <!-- top horizontal line -->
+            <line x1="150" y1="200" x2="200" y2="200"style="stroke:black;stroke-width:2" />
+            <!-- short verticle line -->
+            <line x1="200" y1="200" x2="200" y2="250" style="stroke:black;stroke-width:2" />
+        </svg>
+
+        <h1 id="word-display"></h1>
+        <div>
+            <form id="input">
+                <input id="char-input" type="text" minlength="1" maxlength="1"/>
+                <button id="submit-button" type="submit">Guess</button>
+                
+            </form>
+            <button id="new-game" type="button">New Game</button>
+        </div>
+    <p id = "message" ></p>
+    <p id = "wrong-guesses"></p>
+    <p id="timer">Time: 0s</p>
+      
+
+</div>      
+
     </body>
     <script src="script.js"></script>
+    
 </html>
